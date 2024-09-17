@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    padding: 150px;
+    background-color: rgb(44, 158, 214);
+    border: 15px solid rgb(10, 209, 34);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    border: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
