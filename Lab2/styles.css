@@ -1,0 +1,160 @@
+/* Flexbox Part 1 */
+
+#flex-section1 ul {
+	padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly; 
+    background-color: #ffffff; /* Light blue background */
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #faebd7; /* Antique white background */
+}
+
+#flex-section2 li {
+	list-style: none;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #faebd7; /* Aquamarine background */
+}
+
+#flex-section2 .item1 {
+	order: 1;
+}
+
+#flex-section2 .item2 {
+	order: 3;
+}
+
+#flex-section2 .item3 {
+	order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+	display: flex;
+    justify-content: center; /* Centering horizontally */
+    align-items: center;
+	padding: 0;
+    margin: 0;
+    background-color: #ffe4c4; /* Bisque background */
+}
+
+#flex-section3 .tags ul {
+	display: flex;
+    justify-content: flex-start; /* Aligning tags to the left */
+    flex-wrap: wrap; /* Allowing tags to wrap to the next line */
+    list-style: none;
+	padding: 0;
+    margin: 0;
+    background-color: #ffebcd; /* Blanched almond background */
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-auto-rows: 100px; /* Auto-sized rows with a height of 100px */
+    justify-items: stretch; /* Stretching items horizontally */
+    justify-content: space-evenly; /* Spacing columns evenly */
+    gap: 20px;
+    background-color: #8a2be2; /* Blue violet background */
+}
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+	display: grid;
+    grid-column: 2 / span 3; /* Starting at column 2 and spanning 3 columns */
+    grid-row: 1 / span 3; /* Starting at row 1 and spanning 3 rows */
+    order: 2;
+    background-color: #5f9ea0; /* Cadet blue background */
+}
+
+#grid-section2 .gridboxred {
+	display: grid;
+    grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 2; /* Placing in row 2 */
+    order: 1;
+    background-color: #d2691e; /* Chocolate background */
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+	display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns with a 2:1 ratio */
+    grid-template-rows: 100px 300px 100px; /* Three rows with specified heights */
+    gap: 10px;
+    background-color: #ff7f50; /* Coral background */
+}
+
+#grid-section3 .box1 {
+	grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 1;
+    background-color: #6495ed; /* Cornflower blue background */
+}
+
+#grid-section3 .box2 {
+	order: 2;
+    background-color: #fff8dc; /* Cornsilk background */
+}
+
+#grid-section3 .box3 {
+	order: 1;
+    background-color: #dc143c; /* Crimson background */
+}
+
+#grid-section3 .box4 {
+	grid-column: 1 / span 2; /* Starting at column 1 and spanning 2 columns */
+    grid-row: 3;
+    background-color: #00ffff; /* Aqua background */
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #8b0000; /* Dark red background */
+	color: #fff; /* White text */
+	padding: 20px;
+	text-decoration: none;
+	transition: background-color, color; /* Adding a transition effect to background color and text color */
+    transition-duration: 3s;
+}
+
+#transition-section .box a:hover {
+	background-color: #ff4500; /* Orange red background on hover */
+	color: #000; /* Black text on hover */
+	transition-duration: .5s;
+}
+
+/* end Transition Part */
